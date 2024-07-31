@@ -1,129 +1,119 @@
 .player {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    color: white;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
-    background: linear-gradient(135deg, rgba(57, 76, 88, 0.6), rgba(68, 78, 89, 0.6), rgba(74, 78, 89, 0.6), rgba(57, 76, 86, 0.6), rgba(78, 80, 91, 0.6), rgba(37, 71, 86, 0.6));
-    backdrop-filter: blur(10px);
-    height: 100vh; 
-  }
- 
-  
-  .player img {
-    width: 53%;
-    height: 56%; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  width: 50%;
+  color: white;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, rgba(57, 76, 88, 0.6), rgba(68, 78, 89, 0.6), rgba(74, 78, 89, 0.6), rgba(57, 76, 86, 0.6), rgba(78, 80, 91, 0.6), rgba(37, 71, 86, 0.6));
+  backdrop-filter: blur(10px);
+  height: 100vh; 
+  box-sizing: border-box; 
+}
 
-    object-fit: cover; 
-    border: 2px solid white; 
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-    margin-top: 30px;
-  }
+.player img {
+  width: 50%;
+  height: auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover; 
+  border: 2px solid white; 
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
 
-  
-  .media-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
+.media-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
-  .plus{
-    border-radius: 50%;
-    border:  2px solid white;
-  }
+.plus {
+  border-radius: 50%;
+  border: 2px solid white;
+}
 
-  .heart{
-    color: #7b818e;
-  }
+.heart {
+  color: #7b818e;
+}
+
+.play-arrow {
+  border-radius: 50%;
+  border: 20px solid white;
+}
+
+.repeat {
+  color: #7b818e;
+}
+
+.control-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.control-icon {
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.control-icon:hover {
+  color: black;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+}
+
+.controls .material-symbols-outlined {
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.controls .material-symbols-outlined:hover {
+  color: black;
+}
+
+.media-info .material-symbols-outlined {
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.media-info .material-symbols-outlined:hover {
+  color: black;
+}
 
 
-  .play-arrow{
-    border-radius: 50%;
-    border:  20px solid white;
-  }
-
-  .repeat{
-    color: #7b818e;
-  }
-
-
-  
-  .control-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-  }
-  
-  .control-icon {
-    cursor: pointer;
-    font-size: 40px;
-  }
-  
-  .control-icon:hover {
-    color: black;
-  }
-  
-  .controls {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .controls .material-symbols-outlined {
-    cursor: pointer;
-    font-size: 40px;
-  }
-  
-  .controls .material-symbols-outlined:hover {
-    color: black;
-  }
-
-  .media-info .material-symbols-outlined {
-    cursor: pointer;
-    font-size: 40px;
-  }
-
-  .media-info .material-symbols-outlined:hover{
-    color: black;
-  }
-  
-
-   /* Responsive layout for screens smaller than 700px */
 @media (max-width: 700px) {
   .player {
     width: 100%;
-    height: 50vh; /* Adjust height to fit in half of the viewport */
+    height: 40vh; 
     border-left: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Add bottom border */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
   }
 
-  .player img{
-    width: 23%;
-    height: 36%;
+  .player img {
+    width: 30%;
+    height: auto; 
     display: flex;
     align-items: center;
     justify-content: center;
     object-fit: cover;
     border: 2px solid white;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
-  .playermedia-title{
+  .playermedia-title {
     font-size: 19px;
   }
 }
 
-@media (max-width: 830px) {
-  .player img{
-
-  }
-}

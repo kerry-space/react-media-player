@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     color: white;
-    padding: 25px;
+    padding: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2); 
     background: linear-gradient(135deg, rgba(57, 76, 88, 0.6), rgba(68, 78, 89, 0.6), rgba(74, 78, 89, 0.6), rgba(57, 76, 86, 0.6), rgba(78, 80, 91, 0.6), rgba(37, 71, 86, 0.6)); 
     backdrop-filter: blur(10px);

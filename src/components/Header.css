@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    background: linear-gradient(135deg, rgba(57, 76, 88, 0.6), rgba(68, 78, 89, 0.6), rgba(74, 78, 89, 0.6), rgba(57, 76, 86, 0.6), rgba(78, 80, 91, 0.6), rgba(37, 71, 86, 0.6)); 
+    backdrop-filter: blur(10px);
+ 
+}
+
+span{
+    align-content: center;
+    margin: 0px 20px 0px 20px;
+    
+}
+
+.header .material-symbols-outlined {
+    cursor: pointer;
+    font-size: 40px;
+  }
+
+.header .material-symbols-outlined:hover{
+    color: black;
+  }
+  

@@ -1,0 +1,89 @@
+
+.playlist {
+  width: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow-y: auto; 
+  height: 100vh; 
+ 
+}
+
+.media-item {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0px;
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  background: linear-gradient(135deg, rgba(57, 76, 88, 0.6), rgba(68, 78, 89, 0.6), rgba(74, 78, 89, 0.6), rgba(57, 76, 86, 0.6), rgba(78, 80, 91, 0.6), rgba(37, 71, 86, 0.6)); 
+  backdrop-filter: blur(10px);
+}
+
+.media-container {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+}
+
+.media-title > p {
+  color: #7b818e;
+}
+
+.playlist-img {
+  width: 20%;
+  border-radius: 5px;
+  margin-right: 20px;
+  width: 100px;
+  height: 100px; 
+  object-fit: cover; 
+}
+
+.media-container span {
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.media-item {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.media-item:hover {
+  background-color: black;
+}
+
+.media-item:active{
+ color:  #7b818e;;
+  background-color: #7b818e;
+}
+
+.media-container .material-symbols-outlined {
+  cursor: pointer;
+  font-size: 40px;
+  background-color: #7b818e;
+
+}
+
+.media-container span:active{
+  background-color: white;
+}
+
+
+
+
+.media-container .play-arrow.active {
+  background-color: red; /* Change the background color to red when active */
+}
+
+@media (max-width: 700px) {
+  .playlist {
+    width: 100%;
+    height: 50vh; /* Adjust height to fit in half of the viewport */
+  }
+
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+}

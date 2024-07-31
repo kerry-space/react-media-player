@@ -1,0 +1,16 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden; 
+    background-color: #1c2025;
+    color: white;
+
+  }
+
+  .main{
+    display: flex;
+    
+  }
+
+

@@ -13,7 +13,7 @@ function App():ReactElement {
     <div className="app">
       <Header />
       <main className="main">
-        <Playlist onSelectMedia={setSelectedMedia} />
+        <Playlist selectedMediaId={selectedMedia?.id} onSelectMedia={setSelectedMedia} />
         {selectedMedia && <Player selectedMedia={selectedMedia} />}
       </main>
     </div>

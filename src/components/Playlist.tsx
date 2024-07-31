@@ -6,11 +6,12 @@ import "./Playlist.css"
 
 
 interface PlaylistProps {
+    selectedMediaId: number;
     onSelectMedia: (media: IMediaItems) => void;
   }
   
 
-export function Playlist({ onSelectMedia }: PlaylistProps):ReactElement {
+export function Playlist({selectedMediaId , onSelectMedia }: PlaylistProps):ReactElement {
     return(
         <div className="playlist">
             {mediaItems.map((item) => (
@@ -21,7 +22,8 @@ export function Playlist({ onSelectMedia }: PlaylistProps):ReactElement {
                         <h2>{item.artist}</h2>
                         <p>{item.title}</p>
                    </div>
-                    <span className="material-symbols-outlined"> play_arrow </span>
+                    <span className={`material-symbols-outlined ${item.id === selectedMediaId  ? 'selected' : ''}`}>          
+                    play_arrow </span>
                 </div>
             </div>
             ))}

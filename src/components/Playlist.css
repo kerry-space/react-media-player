@@ -65,21 +65,20 @@
 
 }
 
-.media-container span:active{
-  background-color: white;
+
+
+
+.media-container .material-symbols-outlined.selected {
+  background-color: white; 
 }
 
 
 
-
-.media-container .play-arrow.active {
-  background-color: red; /* Change the background color to red when active */
-}
 
 @media (max-width: 700px) {
   .playlist {
     width: 100%;
-    height: 50vh; /* Adjust height to fit in half of the viewport */
+    height: 50vh; 
   }
 
   .main{
